@@ -25,6 +25,8 @@
 # define LITTLE 0
 # define BIG 1
 
+#define UINT64_C(c) c ## ULL
+
 int      bpsr_create_udp_socket(multilog_t* log, const char* interface, int port, int verbose);
 uint64_t decode_header (char *buffer);
 void     encode_header (char *buffer, uint64_t counter);
